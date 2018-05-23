@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700,900&amp;subset=cyrillic" rel="stylesheet"> 
+	<title>Test-for-Grafitec</title>
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<nav class="sidebar" id="navbar1">
+					<div class="sidebar-sticky">
+						<p><span>+</span>MED<br>SUMMIT<br>18.</p>
+						<div class="navbar-toggler-off"><img src="img/close.png" alt=""></div>
+						<ul class="menu">
+							<li><a href="#">Programm</a></li>
+							<li><a href="#">Our speakers</a></li>
+							<li><a href="#">Locaion</a></li>
+							<li><a href="#">Taxes and fees</a></li>
+							<li><a href="#">Become a speaker</a></li>
+							<li><a href="#">About</a></li>
+						</ul>
+						<a class="sidebar-sticky_contacts" href="#">Contacts us</a>
+					</div>	
+				</nav>
+				<div class="site-overlay"></div>
+				<div class="main-page">
+					<div class="col">
+						<div class="navbar-toggler" data-target="#navbar1">
+							<span></span>
+							<span></span>
+							<span></span>
+							<p>Menu</p>
+						</div>
+						<h1>World largest medical summit<br> Kuala-Lumpur<br> Petronas&nbsp; Twin Towers</h1></div>
+						<div class="col">
+						<div class="main-page_registration-block">
+							<p class="main-page_registration-block_date">19.10.2018 - 27.10.2018</p>
+							<a class="main-page_registration-block_register" href="#">REGISTRATION</a>
+							<p class="main-page_registration-block_preferences">No tax till 01.09.2018</p>
+							<a class="main-page_registration-block_more-info" href="#">Learn more</a>
+						</div>
+					</div>
+					<div class="speakers">
+						<div class="col">
+							<p class="speakers_headline">Speakers:</p>
+							<ul class="lector">
+								<li><img src="img/charles-avatar.png" alt=""><p class="name">PhD John&nbsp;Hertz</p><p class="proffesion">Molecular surgery</p></li>
+								<li><img src="img/charles-avatar.png" alt=""><p class="name">PhD John&nbsp;Hertz</p><p class="proffesion">Molecular surgery</p></li>
+								<li><img src="img/charles-avatar.png" alt=""><p class="name">PhD John&nbsp;Hertz</p><p class="proffesion">Molecular surgery</p></li>
+								<li><img src="img/charles-avatar.png" alt=""><p class="name">PhD John&nbsp;Hertz</p><p class="proffesion">Molecular surgery</p></li>
+								<li><img src="img/charles-avatar.png" alt=""><p class="name">PhD John&nbsp;Hertz</p><p class="proffesion">Molecular surgery</p></li>
+								<li><img src="img/charles-avatar.png" alt=""><p class="name">PhD John&nbsp;Hertz</p><p class="proffesion">Molecular surgery</p></li>
+								<li>
+									<p>Become a speaker</p>
+									<a href="#">Apply now</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		$('.navbar-toggler').click(function() {
+			var sidebar = $('.sidebar');
+			var siteoverlay = $('.site-overlay');        
+			siteoverlay.css('display', 'block');
+			sidebar.css('margin-left', '0');
+			setTimeout( function () {            
+				siteoverlay.css('opacity', '1');
+			}, 100);
+		});
+
+		$('.navbar-toggler-off, .site-overlay').click(function() {
+			console.log('1');
+			var sidebar = $('.sidebar');
+			var siteoverlay = $('.site-overlay');
+			sidebar.css('margin-left', '-100%');
+			siteoverlay.css('opacity', '0');        
+			setTimeout( function () {            
+				siteoverlay.css('display', 'none');    
+			}, 300);        
+		});
+	</script>
+</body>
+</html>
